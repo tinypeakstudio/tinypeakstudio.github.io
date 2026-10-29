@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tinypeak Studio</title>
+  <meta name="description" content="Tinypeak Studio makes small, friendly mobile apps and games.">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --card: #ffffff;
+      --text: #1f2a2e;
+      --muted: #5c6b70;
+      --accent: #2f7d6b;
+      --line: #e3ded3;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14191b;
+        --card: #1d2427;
+        --text: #eef2f1;
+        --muted: #9fb0b3;
+        --accent: #6fcbb2;
+        --line: #2b3539;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 40px; }
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      font-weight: 700; font-size: 1.5rem; letter-spacing: -0.01em;
+    }
+    .logo svg { width: 40px; height: 40px; flex: none; }
+    .tagline { color: var(--muted); margin: 10px 0 40px; font-size: 1.05rem; }
+    h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 14px; }
+    .apps { display: grid; gap: 14px; margin-bottom: 44px; }
+    .app {
+      background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+      padding: 20px 22px;
+    }
+    .app h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .app p { margin: 0 0 12px; color: var(--muted); }
+    .app a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .app a:hover { text-decoration: underline; }
+    .contact { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+    .contact p { margin: 0; }
+    .contact a { color: var(--accent); font-weight: 600; text-decoration: none; word-break: break-all; }
+    footer { color: var(--muted); font-size: 0.85rem; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="logo">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#2f7d6b"/>
+        <path d="M8 29 L17 15 L22 22 L26 17 L32 29 Z" fill="#ffffff"/>
+        <circle cx="29" cy="11" r="3" fill="#f2c14e"/>
+      </svg>
+      Tinypeak Studio
+    </div>
+    <p class="tagline">Small, friendly apps and games for Android.</p>
+
+    <h2>Our apps</h2>
+    <section class="apps">
+      <article class="app">
+        <h3>Paw Path</h3>
+        <p>A cozy logic puzzle game: guide a puppy through the garden and collect every treat in order.</p>
+        <a href="https://tinypeakstudio.github.io/pawpath-privacy/">Privacy policy</a>
+      </article>
+      <article class="app">
+        <h3>ID Photo Maker</h3>
+        <p>Make passport, visa and ID photos on your phone, with background removal, correct sizes and print sheets.</p>
+        <a href="https://tinypeakstudio.github.io/idphoto-privacy/">Privacy policy</a>
+      </article>
+    </section>
+
+    <h2>Contact</h2>
+    <section class="contact">
+      <p>Questions, feedback or support: <a href="mailto:tinypeakstudio.app@gmail.com">tinypeakstudio.app@gmail.com</a></p>
+    </section>
+
+    <footer>&copy; 2026 Tinypeak Studio</footer>
+  </main>
+</body>
+</html>
